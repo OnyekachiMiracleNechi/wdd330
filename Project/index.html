@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Poise Enterprise</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+  <div class="logo-container">
+    <img src="images/logo1.png" alt="Poise Enterprise Logo" class="logo" />
+    <h1>Poise Enterprise</h1>
+  </div>
+ <nav class="main-nav">
+  <button id="hamburger">&#9776;</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="favorites.html">Favorites</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+</header>
+
+  <main>
+    <!-- Search bar -->
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Search for clothing...">
+      <button id="searchButton">Search</button>
+    </section>
+
+    <!-- Filter and Sort Controls -->
+    <section class="filter-sort">
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="jeans">Jeans</option>
+        <option value="sneakers">Sneakers</option>
+        <option value="shirts">Shirts</option>
+      </select>
+
+      <select id="sortOptions">
+        <option value="priceLowHigh">Price: Low to High</option>
+        <option value="priceHighLow">Price: High to Low</option>
+        <option value="popularity">Popularity</option>
+      </select>
+    </section>
+
+    <!-- Trending Carousel -->
+    <section class="trending-carousel">
+      <h2>Trending Now</h2>
+      <div id="carouselContainer">
+        <!-- JavaScript will fill this -->
+      </div>
+    </section>
+
+    <!-- Product Results -->
+    <section class="product-list">
+      <h2>Results</h2>
+      <div id="productsContainer">
+        <!-- JavaScript will populate products here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Product Modal (hidden by default) -->
+  <div id="productModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button" id="closeModal">&times;</span>
+      <div id="modalDetails">
+        <!-- JavaScript will fill product details here -->
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Poise Enterprise. All rights reserved.</p>
+     <p id="lastModified"></p>
+  </footer>
+
+  <script type="module" src="script/main.js"></script>
+</body>
+</html>

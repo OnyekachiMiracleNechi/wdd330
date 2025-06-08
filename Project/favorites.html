@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Favorites - Poise Enterprise</title>
+ <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <h1>Saved Favorites</h1>
+   <header>
+  <div class="logo-container">
+    <img src="images/logo1.png" alt="Poise Enterprise Logo" class="logo" />
+    <h1>Poise Enterprise</h1>
+  </div>
+  <nav class="main-nav">
+  <button id="hamburger">&#9776;</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="favorites.html">Favorites</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+</nav>
+
+</header>
+  </header>
+
+  <main>
+    <section>
+      <h2>Your Favorite Items</h2>
+      <div id="favoritesContainer">
+        <!-- JS will populate this from localStorage -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Poise Enterprise</p>
+     <p id="lastModified"></p>
+  </footer>
+
+  <script type="module" src="script/favorites.js"></script>
+</body>
+</html>
