@@ -1,6 +1,6 @@
 // apiManager.js
 
-const key = '8289fc3e20msh0c7af6205ea7e1ap1670a8jsn1edd5324cce2';
+const key = 'c4924c95d7msh455aa757422697bp10b2b0jsn6485e566d80b';
 const host = 'flipkart-apis.p.rapidapi.com';
 
 const options = {
